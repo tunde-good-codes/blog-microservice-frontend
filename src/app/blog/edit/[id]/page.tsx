@@ -117,8 +117,8 @@ const EditBlogPage = () => {
 
       toast.success(data.message);
       fetchBlogs();
-    } catch (error) {
-      toast.error("Error while adding blog");
+    } catch (error:any) {
+      toast.error("Error while adding blog: " + error.message);
     } finally {
       setLoading(false);
     }
