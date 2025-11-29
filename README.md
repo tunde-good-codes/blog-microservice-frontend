@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+---
 
-First, run the development server:
+# ✅ **Blog Microservice Frontend (Next.js)**
+
+```markdown
+# 🌐 Blog Microservice Frontend (Next.js)
+
+A beautiful, responsive, and performant **Next.js frontend** for a blog platform powered by microservices.  
+This frontend integrates authentication, blog listing, AI-powered blog creation features, filtering, and more.
+
+---
+
+## ✨ Key Features
+
+### 🔍 Blog Filtering  
+Users can filter blogs by:
+- **Title**
+- **Category**
+- **Search keywords**
+
+All filters update instantly thanks to optimized API calls + cached backend responses.
+
+---
+
+### 🧠 AI-Assisted Blog Creation  
+When authors create a blog:
+- Gemini AI checks the blog title
+- AI suggests a compelling, SEO-optimized description
+- Reduces writer’s block and boosts quality
+
+---
+
+### Modern UI (100% Responsive)
+Smooth, mobile-first UI with:
+- Clean layout  
+- Fast page transitions  
+- Optimized images  
+- Accessible design  
+
+Built for an excellent reading experience.
+
+---
+
+### 🔐 Authentication
+Integrated with backend authentication:
+- Google login
+- Email + password login
+- Token-based session persistence
+
+---
+
+### 📦 Integration with Microservices
+
+The frontend communicates with:
+- **User Service** → login, profile, OAuth  
+- **Author Service** → author permissions  
+- **Blog Service** → blogs, comments, uploads  
+
+APIs are consumed through a centralized request utility for maintainability.
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js 14 (App Router)**
+- **React**
+- **TailwindCSS**
+- **Axios**
+- **Cloudinary image URLs**
+- **Typescript**
+
+---
+
+
+---
+
+## ⚡ Performance Optimizations
+
+- Automatic Image Optimization  
+- Route-level caching  
+- Server Components for heavy pages  
+- Debounced search filtering  
+- Pre-fetching for faster navigation  
+
+---
+
+## ▶ Running Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
